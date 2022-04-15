@@ -96,7 +96,7 @@ def end_battle1():
 
 def end_battle2():
     if pikachu_hp[-1] <= 0:
-        pikachu_faint = input(f"{config.config.pikachu_name} fainted!")
+        pikachu_faint = input(f"{config.pikachu_name} fainted!")
         lose = input(f"{config.rival_name} defeated {config.player_name}!")
         lose2 = input(f"{config.rival_name}: Heh, piece of cake!")
         from lab import action_lab3

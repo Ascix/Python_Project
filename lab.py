@@ -79,7 +79,7 @@ def action_lab2():
             rival_text3 = input(f"{config.rival_name}: Heh, my Pokemon look's a lot stronger.\n")
             os.system('clear')
         elif option_lab2 == "4":
-            bb = input(f"Wait {config.player_name}! Let's check out our pokemon!")
+            bb = input(f"{config.rival_name}: Wait {config.player_name}! Let's check out our pokemon!")
             bb1 = input(f"Come on, I'll take you on!")
             os.system('clear')
             prebattle = input(f"{config.rival_name} wants to fight!\n")
@@ -111,6 +111,31 @@ def action_lab3():
             prof_text5 = input(f"I see a future champion in you!\n")
             os.system('clear')
         elif option_lab3 == "3":
+            lab_text1 = input(f"You leave the lab. \n")
+            from home_town2 import action_home_town2
+            action_home_town2()
+        else:
+            nothing = input(f"Choose something to do!\n")
+            os.system('clear')
+
+def action_lab4():
+    os.system('clear')
+    while True:
+        option_lab4 = input(f"""What do you want to do?
+=====================
+1. Talk to lab assistant
+2. Talk to professor
+3. Leave the lab 
+
+""")
+        if option_lab4 == "1":
+            assistant_text1 = input(f"Assistant: I study Pokemon under the professor \n")
+            os.system('clear')
+        elif option_lab4 == "2":
+            prof_text4 = input(f"Professor: Good job on your first battle!")
+            prof_text5 = input(f"I see a future champion in you!\n")
+            os.system('clear')
+        elif option_lab4 == "3":
             lab_text1 = input(f"You leave the lab. \n")
             from home_town2 import action_home_town2
             action_home_town2()

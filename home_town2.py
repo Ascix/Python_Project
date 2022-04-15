@@ -28,8 +28,8 @@ def action_home_town2():
             os.system('clear')
         elif option_home_town == "4":
             lab_text1 = input("You head into the lab.")
-            from lab import action_lab3
-            action_lab3()
+            from lab import action_lab4
+            action_lab4()
         elif option_home_town == "5":
             journey = input("You leave town.")
             from end import ending

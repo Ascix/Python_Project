@@ -1,5 +1,6 @@
 from bedroom import action_room
 import config
+import os
 
 def ask_name():
     while True:
@@ -21,6 +22,7 @@ def ask_name2():
             break       
 
 def start():
+    os.system('clear')
     input("""  _____      _                                                          
  |  __ \    | |                                                         
  | |__) |__ | | _____ _ __ ___   ___  _ __                              
